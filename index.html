@@ -25,7 +25,8 @@
             <img src="مكتب-سياحي/مكتب-سياحي-بحريني.webp" alt="مكتب سياحي - مغادر" class="mughader_header_logo">
             <nav class="mughader_desktop_nav">
                 <ul class="mughader_nav_links">
-                    <li><a onclick="closeSidebar()">الصفحة الرئيسية</a></li>
+                    <li><a onclick="window.scrollTo({ top: 0, behavior: 'smooth' }); closeSidebar()">الصفحة الرئيسية</a>
+                    </li>
                     <li><a onclick="scrollToWhoAreWe('about_us_section_id')">من نحن؟</a></li>
                     <li>
                         <a href="https://www.instagram.com/iticket.bh?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
@@ -33,7 +34,7 @@
                             <ion-icon name="logo-instagram"></ion-icon>
                         </a>
                     </li>
-                    <li>
+                                        <li>
                         <a href="https://www.tiktok.com/@iticket.bh?is_from_webapp=1&sender_device=pc"
                             target="_blank" class="mughader_social_icon">
                             <ion-icon name="logo-tiktok"></ion-icon>
@@ -53,7 +54,8 @@
         <div class="mughader_mobile_sidebar" id="mughader_mobile_sidebar">
             <span class="mughader_close_icon" onclick="closeSidebar()">&times;</span>
             <ul>
-                <li><a onclick="closeSidebar()">الصفحة الرئيسية</a></li>
+                <li><a onclick="window.scrollTo({ top: 0, behavior: 'smooth' }); closeSidebar()">الصفحة الرئيسية</a>
+                </li>
                 <li><a onclick="scrollToWhoAreWe('about_us_section_id'); closeSidebar()">من
                         نحن؟</a></li>
 
@@ -65,7 +67,7 @@
                             <ion-icon name="logo-instagram"></ion-icon>
                         </a>
                     </li>
-                    <li>
+                                        <li>
                         <a href="https://www.tiktok.com/@iticket.bh?is_from_webapp=1&sender_device=pc"
                             target="_blank" class="mughader_social_icon">
                             <ion-icon name="logo-tiktok"></ion-icon>
@@ -91,30 +93,21 @@
 
 
 
+    <section class="neon_section">
+        <div class="neon_overlay">
+            <div class="neon_text_container">
 
+                <h1 class="neon_title" title="شركة سياحية">شركة اي تكت للسفر والسياحة</h1>
 
-    <section class="wow_effect_section">
-        <div class="wow_overlay">
-            <div class="wow_text_container">
-                <div class="wow_glass_box">
-                    <h1 class="wow_title" title="مكتب سياحي - مغادر">شركة اي تكت للسفر والسياحة</h1>
-                    <h2 class="wow_subtitle">
-                        موقعنا: مملكة البحرين
-                    </h2>
-                    <div class="wow_dynamic_text">
-                        <span id="mughader_dynamic_word_switch" class="wow_dynamic_word">رحلات سياحية</span>
-                        <div id="mughader_line_timer" class="wow_timer_line"></div>
-                    </div>
-                </div>
+                <p class="neon_subtitle">موقعنا: مملكة البحرين</p>
+
+                <a onclick="scrollToMiddleOfElement('scrollable_section_title')" class="neon_button">تصفح العروض
+                    السياحية</a>
+
             </div>
         </div>
+        <canvas id="neon_canvas"></canvas>
     </section>
-
-
-
-
-
-
 
 
 
